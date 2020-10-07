@@ -30,4 +30,7 @@ More specifically, we had at our disposal a super-computer named ARGO(80 cores a
 
 ## Compiling and Running MPI:
 
-*   __GOL__: In this folder we have the serial Game of Life, in order to help us do the research and the measurements about the escalation of our program. To compile and run the program, simple, the only thing you have to do is to type: `make` , and then `./main <rows> <columns> <iterations>`. 
+*   __GOL__: In this folder we have the serial Game of Life, in order to help us do the research and the measurements about the escalation of our program. To compile and run the program, simple, the only thing you have to do is to type: `make` , and then `./main <rows> <columns> <iterations>`.  
+
+*   __MPI__: In this folder we have the simple MPI-Game of Life implementation. In order to compile and run the program, things here get a little complicated. First, we have to type ofcourse: `make` , and then `qsub myPBSScript.sh` . This script is given us from the start of this assigment to make our life more easier. 
+In order not to go into unnecessary details, we can say just that, in this script we can "play" with the number of nodes and the number of the processes-per-node. And ofcourse, inside this script the executable program is running, with the appropriate arguments each time.
