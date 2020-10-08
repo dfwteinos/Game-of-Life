@@ -33,4 +33,14 @@ More specifically, we had at our disposal a super-computer named ARGO(80 cores a
 *   __GOL__: In this folder we have the serial Game of Life, in order to help us do the research and the measurements about the escalation of our program. To compile and run the program, simple, the only thing you have to do is to type: `make` , and then `./main <rows> <columns> <iterations>`.  
 
 *   __MPI__: In this folder we have the simple MPI-Game of Life implementation. In order to compile and run the program, things here get a little complicated. First, we have to type ofcourse: `make` , and then `qsub myPBSScript.sh` . This script is given us from the start of this assigment to make our life more easier. 
-In order not to go into unnecessary details, we can say just that, in this script we can "play" with the number of nodes and the number of the processes-per-node. And ofcourse, inside this script the executable program is running, with the appropriate arguments each time.
+In order not to go into unnecessary details, we can say just that, in this script we can "play" with the number of nodes and the number of the processes-per-node. And ofcourse, inside this script the executable program is running, with the appropriate arguments each time.  </br>
+Our request to run the program gets inside a Queue. After a little while, 2 files will reproduce: __myJob.o*****__ and __myJob.e*****__ .The __myJob.o*__ file contains the final message of the time which has passed to complete the program, while in the __myJob.e*__ file, all the error messages will appear.
+
+*   __OPENMP__ and __CUDA__: The process here is the same as previous, nothing changes.  
+
+### Further informations
+
+This project contains also a detailed explaination of this project.  
+For this big project, I've collaborated with the fellow partner: [Jakub Maciejewski](https://www.linkedin.com/in/jakub-maciejewski-0270291b7/)
+
+*This project is part of the course: Parallel Systems , Winter of 2019. University of Athens, DiT.*
